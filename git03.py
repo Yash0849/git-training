@@ -1,13 +1,24 @@
-# Simple calculator
+# Improved calculator
 
 num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
 
-print("Sum:", num1 + num2)
-print("Difference:", num1 - num2)
-print("Product:", num1 * num2)
+operation = input("Enter operation (+, -, *, /): ")
 
-if num2 != 0:
-    print("Division:", num1 / num2)
+if operation == "+":
+    print("Result:", num1 + num2)
+
+elif operation == "-":
+    print("Result:", num1 - num2)
+
+elif operation == "*":
+    print("Result:", num1 * num2)
+
+elif operation == "/":
+    if num2 != 0:
+        print("Result:", num1 / num2)
+    else:
+        print("Error: Cannot divide by zero.")
+
 else:
-    print("Cannot divide by zero.")
+    print("Invalid operation.")
