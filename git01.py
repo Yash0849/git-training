@@ -9,3 +9,4 @@ if guess == number:
     print("🎉 Correct! You guessed it.")
 else:
     print(f"❌ Wrong! The number was {number}.")
+print("Thanks for playing!")
