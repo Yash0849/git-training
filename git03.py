@@ -22,3 +22,4 @@ elif operation == "/":
 
 else:
     print("Invalid operation.")
+    print("Invalid operation.")
